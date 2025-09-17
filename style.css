@@ -25,6 +25,7 @@ section {
 
 .container {
   padding: 50px 0;
+  width: 100%;
 }
 
 .row {
@@ -216,7 +217,7 @@ nav {
   border-radius: 20px;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 }
 
 .project__wrapper:hover .project__description {
@@ -271,4 +272,39 @@ nav {
 
 .project__description--para {
   margin: 16px 0;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer{
+  background-color: #242424;
+  display: flex;
+  padding: 6% 0;
+}
+
+.footer__row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo--img{
+width: 100px;
+}
+
+.footer__social--list{
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 28px;
+}
+
+.footer__social--link,
+.footer__copyright{
+color: white;
 }

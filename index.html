@@ -9,6 +9,17 @@
       src="https://kit.fontawesome.com/3852e702d0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YOUR_PUBLIC_KEY",
+      });
+   })();
+</script>
   </head>
   <body>
     <section id="landing-page">
@@ -119,7 +130,7 @@
         <h3 class="modal__sub-title modal__sub-title--contact">
           I'm currently looking for new opprotunities!
         </h3>
-        <form id="contact__form" action="">
+        <form id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
             <label for="name" class="form__item--label">Name</label>
             <input name="user_name" type="text" class="input" required></input>

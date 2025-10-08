@@ -320,7 +320,7 @@ nav {
 
  .modal__about{
   background-color: rgb(245, 245, 245);
-  transform: translateX(-110%);
+  transform: translateX(0);
  }
 
  .modal__languages{
@@ -361,7 +361,7 @@ transform: scale(1);
  .modal__contact{
   background-color: #242424;
   color: white;
-  transform: translateX(110%);
+  transform: translateX(0);
  }
 
  .modal__title{

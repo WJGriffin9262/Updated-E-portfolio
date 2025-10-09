@@ -1,6 +1,19 @@
 //template_m2xp97o
 //service_prmsgo8
 //pC3Xs5nEQtKJb34Zy
+let isModalOpen = false;
+
+let contrastToggle = false;
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
+}
 
 function contact(event) {
     event.preventDefault()
@@ -24,7 +37,6 @@ function contact(event) {
     )
    })
 }
-let isModalOpen = false;
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;
